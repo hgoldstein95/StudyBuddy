@@ -9,3 +9,7 @@ Router.route('/', function() {
 Router.route('/login', function() {
 	this.render('login');
 });
+
+Router.route('/create',function() {
+	this.render('create');
+});
