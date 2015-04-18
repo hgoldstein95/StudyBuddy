@@ -8,7 +8,7 @@ Template.create.events({
 });
 
 Template.login.events({
-	'click button': function(evt) {
+	'click a#notUser': function(evt) {
 		Session.set('hasAccount', false);
 	}
 });
