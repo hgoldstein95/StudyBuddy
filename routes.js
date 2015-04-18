@@ -13,3 +13,7 @@ Router.route('/login', function() {
 Router.route('/create', function() {
 	this.render('create');
 });
+
+Router.route('/profile', function() {
+	this.render('profile');
+});
