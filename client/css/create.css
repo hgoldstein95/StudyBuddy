@@ -1,0 +1,18 @@
+form{
+	width:200px;
+}
+legend{
+	font-family:arial;
+	font-size:18;
+	font-weight:bold;
+}
+label{
+	padding-top: 10px;
+}
+button{
+	padding-bottom: 200px;
+}
+#form-group{
+	font-family:arial;
+	font-size:12;
+}
