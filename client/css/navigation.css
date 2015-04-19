@@ -1,6 +1,9 @@
 .login{
 	padding:20px;
 }
+.active{
+	color:blue;
+}
 
 #goBack {
 	padding-left: 15px;
