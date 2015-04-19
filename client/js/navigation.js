@@ -1,3 +1,5 @@
-Template.navigation.hasAccount = function() {
-	return Session.get('hasAccount')
-};
+Template.navigation.helpers({
+	hasAccount: function() {
+		return Session.get('hasAccount');
+	}
+});

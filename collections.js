@@ -1,2 +1,1 @@
-Universities = new Mongo.Collection('universities');
-Classes = new Mongo.Collection('classes');
+Universities = new Meteor.Collection('universities');
