@@ -1,24 +1,31 @@
 Template.profile.helpers({
-	'textAreaContent': function () {
+	textAreaContent: function () {
 		return Session.get('textAreaContent');
-}
+	},
+	changingUniversity: function () {
+		return Session.get('changingUniversity');
+	}
+});
+
+Template.profile.events({
+	'click #changeUniversity': function(evt) {
+		Session.set('changingUniversity', !Session.get('changingUniversity'));
+	}
 });
 
 Template.profile.rendered = function(){
 	$('#fullname.editable').editable({
 		placement: "auto top",
 		success: function(response, newValue) {
-			console.log(newValue);
+			Meteor.users.find({ '_id': this.userId },
+    		{ fields: 
+    			{ 
+    				'name': 1
+    			} 
+    		});
 		}
 	})
 
-	$('#schoolname.editable').editable({
-		placement: "auto top",
-		success: function(response, newValue) {
-			console.log(newValue);
-		}
-	})
-	
 	$('#major.editable').editable({
 		placement: "auto top",
 		success: function(response, newValue) {

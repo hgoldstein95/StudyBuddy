@@ -20,8 +20,8 @@
 			<p></p>
 				<p><h3>
 					<a href="#" class="editable" id="fullname" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Full Name">First Name Last Name</a>
-					 - 
-					<a href="#" class="editable" id="schoolname" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter School">School</a></h3></p>
+					 - School
+					 </h3></p>
 			</div>
 			
 			<div class="col-sm-6 col-md-1"></div>
@@ -29,8 +29,13 @@
 				<h3> </h3>
 				<h3> </h3>
 				<p>Student at
-					<a href="#" class="editable" id="schoolname" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter School">University</a>
+					<a href="#" id="changeUniversity">University</a>
 				</p>
+				{{#if changingUniversity}}
+					<br>
+					{{> universityChooser}}
+					<br>
+				{{/if}}
 				<p>Studying 
 					<a href="#" class="editable" id="major" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Major">Major</a>
 				</p>
