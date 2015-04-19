@@ -8,3 +8,9 @@ Template.navigation.drop = function() {
 	$('.dropdown-toggle').dropdown('toggle');
 	Session.set('hasAccount', true);
 };
+
+Template.navigation.events({
+	'click a#logout': function(evt) {
+		Meteor.logout();
+	}
+});
