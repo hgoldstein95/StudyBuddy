@@ -22,3 +22,7 @@ Router.route('/TEST', function() {
 Router.route('/course', function() {
 	this.render('course');
 });
+
+Router.route('/search', function() {
+	this.render('search');
+});
