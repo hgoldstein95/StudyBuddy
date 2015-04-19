@@ -21,7 +21,7 @@ Template.create.events({
     			lastName: evt.target.lastName.value,
     			educationalInstitution: evt.target.educationalInstitution.value
 			});
-        Template.navigation.drop();
+        	Template.navigation.drop();
     		Router.go("/");
     	}
   		else{

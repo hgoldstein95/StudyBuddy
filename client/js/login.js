@@ -8,7 +8,8 @@ Template.login.events({
 Template.login.events({
 	'submit form': function(evt) {
 		evt.preventDefault();
-		Accounts.loginWithPassword(evt.target.password.value);
+		Meteor.loginWithPassword(evt.target.username.value, evt.target.password.value);
+		Template.navigation.drop();
 		Router.go("/");
 	}
 });
