@@ -67,7 +67,7 @@ padding-top: 27%;
 padding-top: 30%;
 }
 
-div.flip-3d:hover figure { transform: rotateY(.5turn); }
+div.flip-3d:hover figure, .flip-3d.hover figure, .flip-3d.flip figure { transform: rotateY(.5turn); }
 
 div.flip-3d:hover figure figcaption { opacity: 1; }
 

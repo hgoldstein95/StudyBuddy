@@ -14,7 +14,7 @@
 		                <div class="carousel-caption" >
 		                    <h1 >Find Your Study Buddy Today!</h1>
 		                    <!-- <p>SHALIN IS KEWL</p> -->
-		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+		                    <h4>Sign up today</h4>
 		                </div>
 		            </div>
 		        </div>
@@ -24,7 +24,7 @@
 		                <div class="carousel-caption">
 		                    <h1>Collaborative notes, old exams, and more!</h1>
 		                    <!-- <p>COLEN IS GHEY</p> -->
-		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+		                    <p><a class="btn btn-lg btn-primary" onclick="javascript:flipall()" role="button">Learn more</a></p>
 		                </div>
 		            </div>
 		        </div>
@@ -34,7 +34,7 @@
 		                <div class="carousel-caption">
 		                    <h1>A development team that understands college.</h1>
 		                    <!-- <p>LARRY HARRY POWER HOUR</p> -->
-		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">More about us</a></p>
+		                    <p><a class="btn btn-lg btn-primary" href="/about" role="button">More about us</a></p>
 		                </div>
 		            </div>
 		        </div>
@@ -46,24 +46,33 @@
 	<!-- Carousel end -->	
 	
 <div class="flip-3d">
-<figure>
-<img src="home_images/Internet.png" alt="">
-<figcaption id="caption1">Create and customize your own user page with your classes and preferences.
-After, we can connect you with other students who need a Study Buddy for any of your college courses.</figcaption>
-</figure>
+	<figure>
+		<img src="home_images/Internet.png" alt="">
+		<figcaption id="caption1">Create and customize your own user page with your classes and preferences.
+		After, we can connect you with other students who need a Study Buddy for any of your college courses.</figcaption>
+	</figure>
 </div>
 <div class="flip-3d">
-<figure>
-<img src="home_images/Notes.png" alt="">
-<figcaption id="caption2">Study Buddy allows students to upload class notes. They can see notes from other students taking
-the same course, or a similar course. Collaborate with others and work together to learn everything you need!</figcaption>
-</figure>
+	<figure>
+		<img src="home_images/Notes.png" alt="">
+		<figcaption id="caption2">Study Buddy allows students to upload class notes. They can see notes from other students taking
+		the same course, or a similar course. Collaborate with others and work together to learn everything you need!</figcaption>
+	</figure>
 </div>
 <div class="flip-3d">
-<figure>
-<img src="home_images/Test.png" alt="">
-<figcaption id="caption3">Feel liking flying solo? You can look through worksheets and old tests to practice. Master the material
-you need to pass all your exams with flying colors!</figcaption>
-</figure>
+	<figure>
+		<img src="home_images/Test.png" alt="">
+		<figcaption id="caption3">Feel liking flying solo? You can look through worksheets and old tests to practice. Master the material
+		you need to pass all your exams with flying colors!</figcaption>
+	</figure>
 </div>
+<script>
+function flipall() {
+	var x = document.querySelectorAll(".flip-3d");
+	x[0].classList.toggle('hover');
+	x[1].classList.toggle('hover');
+	x[2].classList.toggle('hover');
+	}
+</script>
+
 </template>
