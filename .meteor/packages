@@ -10,3 +10,5 @@ insecure
 mizzao:bootstrap-3
 accounts-password
 iron:router
+jquery
+natestrauser:x-editable-bootstrap
