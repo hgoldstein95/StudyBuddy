@@ -4,9 +4,9 @@ Template.universityChooser.events({
 		Session.set('universityNotPresent', !Session.get('universityNotPresent'));
 	},
 	'change #input': function(evt){
-		Session.set('schoolSel', $('#input').find(':selected').value);
+		Session.set('schoolSel', $('#input').find(':selected').val());
 		var id = UserInfo.findOne({'id': Meteor.userId()})._id;
-		UserInfo.update(id, {$set: {'university': Session.get('schoolSel')}});
+		UserInfo.update({'_id': id}, {$set : {'university' : Session.get('schoolSel')}});
 	}
 });
 
