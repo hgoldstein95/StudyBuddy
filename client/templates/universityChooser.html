@@ -1,0 +1,12 @@
+<template name="universityChooser">
+	<select name="" id="input" class="form-control" required="required">
+		{{#each universities}}
+			<option value="{{_id}}">{{name}}</option>
+		{{/each}}
+	</select>
+	<em>Your university not here? <a href="" id="addUniversity">Add it!</a></em>
+	<br>
+	{{#if universityNotPresent}}
+		{{> addUniversity}}
+	{{/if}}
+</template>
