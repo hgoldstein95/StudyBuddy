@@ -26,3 +26,7 @@ Router.route('/course', function() {
 Router.route('/search', function() {
 	this.render('search');
 });
+
+Router.route('/contact', function() {
+	this.render('contact');
+	});
