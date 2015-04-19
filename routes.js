@@ -18,3 +18,7 @@ Router.route('/TEST', function() {
 	this.render('universityChooser');
 
 });
+
+Router.route('/course', function() {
+	this.render('course');
+});
