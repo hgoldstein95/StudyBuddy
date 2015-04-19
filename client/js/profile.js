@@ -7,6 +7,9 @@ Template.profile.helpers({
 	},
 	thisUser: function() {
 		return UserInfo.findOne({'id': Meteor.userId()});
+	},
+	universityFromId: function() {
+		return Universities.findOne({'_id': UserInfo.findOne({'id': Meteor.userId()}).university}).name;
 	}
 });
 
