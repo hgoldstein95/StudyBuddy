@@ -17,3 +17,7 @@ Router.route('/create', function() {
 Router.route('/profile', function() {
 	this.render('profile');
 });
+
+Router.route('/db', function() {
+	this.render('db');
+});
