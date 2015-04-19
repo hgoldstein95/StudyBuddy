@@ -5,5 +5,6 @@ Template.addUniversity.events({
 			"name": evt.target.school.value,
 			"classes": []
 		});
+		Session.set('universityNotPresent', false);
 	}
 });

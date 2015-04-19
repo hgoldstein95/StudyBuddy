@@ -8,7 +8,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col-md-2">
 				<div style="width:200px;height:200px;overflow:hidden">
@@ -19,8 +18,7 @@
 			<div class="col-sm-1 col-md-8">
 			<p></p>
 				<p><h3>
-					<a href="#" class="editable" id="fullname" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Full Name">First Name Last Name</a>
-					 - School
+					<a href="#" class="editable" id="fullname" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Full Name" value="">{{thisUser.name}}</a>
 					 </h3></p>
 			</div>
 			
@@ -37,29 +35,26 @@
 					<br>
 				{{/if}}
 				<p>Studying 
-					<a href="#" class="editable" id="major" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Major">Major</a>
+					<a href="#" class="editable" id="major" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Major">{{thisUser.major}}</a>
 				</p>
 				<p>Class of 
-					<a href="#" class="editable" id="gradyear" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Graduation Year">20XX</a>
+					<a href="#" class="editable" id="gradyear" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Graduation Year">{{thisUser.gradyear}}</a>
 				</p>
 				<p>Born on  
-					<a href="#" class="editable" id="birthday" data-type="date" data-mode="popup" data-showbuttons="true" data-placement="right" data-title="Enter Birthday">1996-08-24</a>
+					<a href="#" class="editable" id="birthday" data-type="date" data-mode="popup" data-showbuttons="true" data-placement="right" data-title="Enter Birthday">{{thisUser.birthday}}</a>
 				</p>
 			</div>
 			<div class="col-sm-6 col-md-4">
 				<h3> </h3>
 				<h3> </h3>
-				<p>School Email: 
-					<a href="#" class="editable" id="schoolemail" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter School Email">duckfacemaster@cornell.edu</a>
-				</p>
+
 				<p>Personal Email: 
-					<a href="#" class="editable" id="personalemail" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Personal Email">duckfacemaster@gmail.edu</a>
+					<a href="#" class="editable" id="personalemail" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter Personal Email">{{thisUser.email}}</a>
 				</p>
 				<p>LinkedIn: 
-					<a href="#" class="editable" id="linkedin" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter LinkedIn">duckmaster</a>
+					<a href="#" id="linkedin" class="editable" data-type="text" data-mode="inline" data-showbuttons="true" data-placement="right" data-title="Enter LinkedIn">{{thisUser.linkedin}}</a>
 				</p>
 			</div>
 		</div>
 	</div>
-	
 </template>
