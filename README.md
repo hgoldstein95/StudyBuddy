@@ -1,4 +1,3 @@
 # StudyBuddy
-shalin was here
-so was Colen and Brandon
-No information yet. Come back for more soon!
+
+This simple application was built during HackRU 2015.
